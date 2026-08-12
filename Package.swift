@@ -25,22 +25,24 @@ let package = Package(
         .target(
             name: "ConcurrencyExtras_Aggregation",
             dependencies: ["ConcurrencyExtras"],
+            packageAccess: false,
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "ConcurrencyExtras",
-            url: "https://github.com/swift-precompiled/swift-concurrency-extras/releases/download/1.4.1/ConcurrencyExtras-b603ecf9e7aa7a7cdeea4cf71b5af4e0ca822e1fe6543d5e55e4450c0a6f9cf1.xcframework.zip",
-            checksum: "b603ecf9e7aa7a7cdeea4cf71b5af4e0ca822e1fe6543d5e55e4450c0a6f9cf1"
+            url: "https://github.com/swift-precompiled/swift-concurrency-extras/releases/download/1.4.1/ConcurrencyExtras-843cddb6ac9c14c03478fede3f5f7d4c0208160fe9afa283e33a08fbeba28e23.xcframework.zip",
+            checksum: "843cddb6ac9c14c03478fede3f5f7d4c0208160fe9afa283e33a08fbeba28e23"
         ),
         .target(
             name: "ConcurrencyExtrasTestSupport_Aggregation",
             dependencies: ["ConcurrencyExtrasTestSupport"],
+            packageAccess: false,
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "ConcurrencyExtrasTestSupport",
-            url: "https://github.com/swift-precompiled/swift-concurrency-extras/releases/download/1.4.1/ConcurrencyExtrasTestSupport-e3bf49cd73dc2801e88352b52cba32777938c77b130d4114624d1658599118aa.xcframework.zip",
-            checksum: "e3bf49cd73dc2801e88352b52cba32777938c77b130d4114624d1658599118aa"
+            url: "https://github.com/swift-precompiled/swift-concurrency-extras/releases/download/1.4.1/ConcurrencyExtrasTestSupport-5547d8cf4f58fba4c794b649b38384c1d476965940f4f9b2f8f2f0b5c45e19a7.xcframework.zip",
+            checksum: "5547d8cf4f58fba4c794b649b38384c1d476965940f4f9b2f8f2f0b5c45e19a7"
         )
     ]
 )
