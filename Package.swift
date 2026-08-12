@@ -14,11 +14,11 @@ let package = Package(
     products: [
         .library(
             name: "ConcurrencyExtras",
-            targets: ["ConcurrencyExtras_PrecompiledProduct"]
+            targets: ["ConcurrencyExtras"]
         ),
         .library(
             name: "ConcurrencyExtrasTestSupport",
-            targets: ["ConcurrencyExtrasTestSupport_PrecompiledProduct"]
+            targets: ["ConcurrencyExtrasTestSupport"]
         )
     ],
     targets: [
@@ -29,8 +29,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ConcurrencyExtras",
-            url: "https://github.com/swift-precompiled/swift-concurrency-extras/releases/download/1.4.1/ConcurrencyExtras-1a9994b6048c95e1f9a99a62b3b884f6eb256cff73db856ca51acc11b12aa8db.xcframework.zip",
-            checksum: "1a9994b6048c95e1f9a99a62b3b884f6eb256cff73db856ca51acc11b12aa8db"
+            url: "https://github.com/swift-precompiled/swift-concurrency-extras/releases/download/1.4.1/ConcurrencyExtras-b603ecf9e7aa7a7cdeea4cf71b5af4e0ca822e1fe6543d5e55e4450c0a6f9cf1.xcframework.zip",
+            checksum: "b603ecf9e7aa7a7cdeea4cf71b5af4e0ca822e1fe6543d5e55e4450c0a6f9cf1"
         ),
         .target(
             name: "ConcurrencyExtrasTestSupport_Aggregation",
@@ -39,16 +39,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ConcurrencyExtrasTestSupport",
-            url: "https://github.com/swift-precompiled/swift-concurrency-extras/releases/download/1.4.1/ConcurrencyExtrasTestSupport-fbaf297f83e2cb85d7584c678524d6fe041cce72fb9c7e36b691699162fa939f.xcframework.zip",
-            checksum: "fbaf297f83e2cb85d7584c678524d6fe041cce72fb9c7e36b691699162fa939f"
-        ),
-        .target(
-            name: "ConcurrencyExtras_PrecompiledProduct",
-            dependencies: ["ConcurrencyExtras_Aggregation"]
-        ),
-        .target(
-            name: "ConcurrencyExtrasTestSupport_PrecompiledProduct",
-            dependencies: ["ConcurrencyExtrasTestSupport_Aggregation"]
+            url: "https://github.com/swift-precompiled/swift-concurrency-extras/releases/download/1.4.1/ConcurrencyExtrasTestSupport-e3bf49cd73dc2801e88352b52cba32777938c77b130d4114624d1658599118aa.xcframework.zip",
+            checksum: "e3bf49cd73dc2801e88352b52cba32777938c77b130d4114624d1658599118aa"
         )
     ]
 )
